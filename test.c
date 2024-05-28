@@ -293,19 +293,19 @@ Node* searchIterative(Node* head, int key){
 
 
 int freeBST(Node* head){
-    Node* temp=head->left;
-    // Base case: Empty tree
-    if (temp == NULL) {
-        return 1; // Successful deallocation (nothing to free)
-    }
+    // Node* temp=head->left;
+    // // Base case: Empty tree
+    // if (temp == NULL) {
+    //     return 1; // Successful deallocation (nothing to free)
+    // }
 
-    // Recursively free left and right subtrees
-    freeBST(temp->left);
-    freeBST(temp->right);
+    // // Recursively free left and right subtrees
+    // freeBST(temp->left);
+    // freeBST(temp->right);
 
-    // Free the current node after freeing its children
-    free(temp);
-    return 1; // Successful deallocation
+    // // Free the current node after freeing its children
+    // free(temp);
+    // return 1; // Successful deallocation
 }
 
 
